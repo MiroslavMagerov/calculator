@@ -2,8 +2,17 @@
     box-sizing: border-box;
 }
 
+html {
+    background-image: url(Images/background-aurora.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 h1 {
-    font-size: 2.2em;
+    font-size: 3em;
+    color: white;
+    font-style: italic;
 }
 
 #calculator-section {
@@ -25,7 +34,7 @@ h1 {
     flex-flow: row wrap;
 }
 
-#display {
+#result-div {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -33,9 +42,9 @@ h1 {
     align-self: center;
 }
 
-#display h2 {
+#result {
     color: white;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 #bottom-buttons-div {
