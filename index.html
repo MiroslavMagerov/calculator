@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator </title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body onload="init()">
-    <main>
-        <section id="calculator-section">
-            <div id="calculator">
-                <div id="result-div">
-                    <h2 id="result"></h2>
-                </div>
-                <div id="bottom-buttons-div">
-                    <button type="button" class="calc-button operation" value="C">C</button>
-                    <button type="button" class="calc-button operation" value="D">D</button>
-                    <button type="button" class="calc-button math-operation" value="%">%</button>
-                    <button type="button" class="calc-button math-operation" value="/">/</button>
-                    <button type="button" class="calc-button number" value="7">7</button>
-                    <button type="button" class="calc-button number" value="8">8</button>
-                    <button type="button" class="calc-button number" value="9">9</button>
-                    <button type="button" class="calc-button math-operation" value="*">*</button>
-                    <button type="button" class="calc-button number" value="4">4</button>
-                    <button type="button" class="calc-button number" value="5">5</button>
-                    <button type="button" class="calc-button number" value="6">6</button>
-                    <button type="button" class="calc-button math-operation" value="-">-</button>
-                    <button type="button" class="calc-button number" value="1">1</button>
-                    <button type="button" class="calc-button number" value="2">2</button>
-                    <button type="button" class="calc-button number" value="3">3</button>
-                    <button type="button" class="calc-button math-operation" value="+">+</button>
-                    <button type="button" class="calc-button zero number" value="0">0</button>
-                    <button type="button" class="calc-button number" value=".">.</button>
-                    <button type="button" class="calc-button math-operation" value="=">=</button>
-                </div>
+<body>
+    <header>
+        <h2>CALCULATOR APP</h2>
+    </header>
+
+    <section>
+        <div id="calculator">
+            <div id="calculator-display-container">
+                <h3>0</h3>
             </div>
-        </section>
-    </main>
+            <div id="calculator-buttons-container">
+                <button name="" value="C" class="special-button">C</button>
+                <button name="" value="D" class="special-button double-column">D</button>
+                <button name="" value="/" class="operation-button">/</button>
+                <button name="" value="7" class="num-button">7</button>
+                <button name="" value="8" class="num-button">8</button>
+                <button name="" value="9" class="num-button">9</button>
+                <button name="" value="*" class="operation-button">*</button>
+                <button name="" value="4" class="num-button">4</button>
+                <button name="" value="5" class="num-button">5</button>
+                <button name="" value="6" class="num-button">6</button>
+                <button name="" value="-" class="operation-button">-</button>
+                <button name="" value="1" class="num-button">1</button>
+                <button name="" value="2" class="num-button">2</button>
+                <button name="" value="3" class="num-button">3</button>
+                <button name="" value="+" class="operation-button">+</button>
+                <button name="" value="0" class="num-button double-column">0</button>
+                <button name="" value="." class="num-button">.</button>
+                <button name="" value="=" class="operation-button">=</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Miroslav Magerov 2024</p>
+    </footer>
 </body>
 </html>

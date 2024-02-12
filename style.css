@@ -1,88 +1,109 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html {
-    background-image: url(Images/background-aurora.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: white;
+    background-color: rgb(33, 120, 148);
 }
 
-h1 {
-    font-size: 3em;
+header {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding: 60px 10px;
+}
+
+header h2 {
+    font-size: 2.5em;
     color: white;
     font-style: italic;
 }
 
-#calculator-section {
+section {
+    width: 100%;
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-    height: 98vh;
 }
 
 #calculator {
-    border: 1px solid black;
-    width: 20vw;
-    height: 35vw;
-    border-radius: 35px;
+    width: 320px;
+    height: 550px;
     background-color: #17181a;
-    padding: 20px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
 }
 
-#result-div {
+#calculator-display-container {
     width: 100%;
+    height: 25%;
+    margin: 30px 25px;
     display: flex;
-    flex-flow: row wrap;
     justify-content: end;
-    align-self: center;
+    align-items: center;
+    border-bottom: 3px solid white;
 }
 
-#result {
+#calculator-display-container h3 {
+    font-size: 2.5em;
     color: white;
-    font-size: 3em;
-}
+} 
 
-#bottom-buttons-div {
+#calculator-buttons-container {
     width: 100%;
-    height: 55%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    height: 60%;
+    padding: 5px 20px;
     align-self: end;
-    margin-bottom: 20%;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
 }
 
-.calc-button {
-    width: calc(22% - 5px);
-    height: calc(22% - 5px);
+.double-column {
+    grid-column: span 2;
+}
+
+#calculator-buttons-container button {
     border-radius: 15px;
     border: none;
-    font-size: 1.8rem;
     cursor: pointer;
-    margin: 10px 3px;
+    font-size: 1.5em;
 }
 
-.number {
-    background-color: #35363b;
-    color: #00ff66;
-}
-
-.math-operation {
-    background-color: #09893c;
-    color: white;
-}
-
-.operation {
+.special-button {
     background-color: #616161;
     color: white;
 }
 
-.zero {
-    width: calc((25% * 2 - 13px));
+.num-button {
+    background-color: #35363b;
+    color: #00ff66;
+}
+
+.operation-button {
+    background-color: #09893c;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
 }
